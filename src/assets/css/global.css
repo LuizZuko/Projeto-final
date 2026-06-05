@@ -16,3 +16,21 @@ body {
     justify-content: space-between; 
     align-items: center; 
 }
+
+.navbar h1 { 
+    color: white; 
+    font-size: 1.6rem; 
+}
+
+.navbar nav a { 
+    color: #bdc3c7; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    padding-bottom: 5px; 
+}
+
+.navbar nav a:hover { 
+    color: #fff; 
+}
