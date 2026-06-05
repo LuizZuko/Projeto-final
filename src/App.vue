@@ -29,3 +29,7 @@ import PaginaShows from './components/PaginaShows.vue';
 import PaginaFestas from './components/PaginaFestas.vue';
 import PaginaFestivais from './components/PaginaFestivais.vue';
 import ModalCompra from './components/ModalCompra.vue';
+
+const paginaAtual = ref('shows');
+const modalAberto = ref(false);
+const eventoAtual = ref(null);
