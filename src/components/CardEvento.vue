@@ -20,3 +20,5 @@ defineProps({
 });
 defineEmits(['abrir-modal']);
 </script>
+
+<style src="../assets/css/componentes.css" scoped></style>
