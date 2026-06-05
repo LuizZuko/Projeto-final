@@ -47,3 +47,5 @@ const eventosFiltrados = computed(() => {
   return festas.value.filter(evento => evento.nome.toLowerCase().includes(termoBusca.value.toLowerCase()));
 });
 </script>
+
+<style src="../assets/css/festas.css" scoped></style>
