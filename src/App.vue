@@ -8,3 +8,9 @@
         <a href="#" :class="{ ativo: paginaAtual === 'festivais' }" @click.prevent="paginaAtual = 'festivais'">Festivais</a>
       </nav>
     </header>
+
+    <main class="container">
+      <PaginaShows v-if="paginaAtual === 'shows'" @abrir-modal="prepararFluxoCompra" />
+      <PaginaFestas v-else-if="paginaAtual === 'festas'" @abrir-modal="prepararFluxoCompra" />
+      <PaginaFestivais v-else-if="paginaAtual === 'festivais'" @abrir-modal="prepararFluxoCompra" />
+    </main>
