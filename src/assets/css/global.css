@@ -34,3 +34,14 @@ body {
 .navbar nav a:hover { 
     color: #fff; 
 }
+
+.navbar nav a.ativo { 
+    color: #fff; 
+    border-bottom: 3px solid #e67e22; 
+}
+
+.container { 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
