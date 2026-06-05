@@ -22,3 +22,10 @@
     />
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+import PaginaShows from './components/PaginaShows.vue';
+import PaginaFestas from './components/PaginaFestas.vue';
+import PaginaFestivais from './components/PaginaFestivais.vue';
+import ModalCompra from './components/ModalCompra.vue';
