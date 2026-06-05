@@ -66,5 +66,23 @@ body {
   .navbar h1 { 
     font-size: 1.4rem; 
 }
- 
+ .navbar nav { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; width: 100%; 
+}
+  .navbar nav a { 
+    margin-left: 0; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #34495e; 
+    width: 100%; 
+    display: block; 
+}
+  .navbar nav a.ativo { 
+    border-bottom: 2px solid #e67e22; 
+}
+  .container { 
+    margin: 15px auto; 
+    padding: 0 10px; 
+} 
 }
