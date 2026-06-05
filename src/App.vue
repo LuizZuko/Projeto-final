@@ -1,11 +1,10 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
-
-<style scoped></style>
+  <div id="app">
+    <header class="navbar">
+      <h1>Pisada Prime</h1>
+      <nav>
+        <a href="#" :class="{ ativo: paginaAtual === 'shows' }" @click.prevent="paginaAtual = 'shows'">Shows</a>
+        <a href="#" :class="{ ativo: paginaAtual === 'festas' }" @click.prevent="paginaAtual = 'festas'">Festas & Baladas</a>
+        <a href="#" :class="{ ativo: paginaAtual === 'festivais' }" @click.prevent="paginaAtual = 'festivais'">Festivais</a>
+      </nav>
+    </header>
