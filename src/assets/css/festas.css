@@ -71,3 +71,17 @@
     flex-grow: 1; 
     margin-left: 25px; 
 }
+.row-info h4 { 
+    font-size: 1.3rem; 
+    color: #2c3e50; 
+}
+
+.btn-comprar-row { 
+    background: #9b59b6; 
+    color: white; 
+    border: none; 
+    padding: 12px 24px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
