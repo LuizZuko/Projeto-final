@@ -39,3 +39,5 @@ const prepararFluxoCompra = (evento) => {
   modalAberto.value = true;
 };
 </script>
+
+<style src="./assets/css/global.css"></style>
