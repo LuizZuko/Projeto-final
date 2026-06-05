@@ -85,3 +85,21 @@
     cursor: pointer; 
     font-weight: bold; 
 }
+
+@media (min-width: 481px) and (max-width: 992px) {
+    
+  .festa-hero { 
+    padding: 35px 25px; 
+    margin-bottom: 30px; 
+}
+  .festa-hero h2 { 
+    font-size: 1.9rem; 
+}
+  .row-info h4 { 
+    font-size: 1.15rem; 
+}
+  .row-img { 
+    width: 85px; 
+    height: 85px;
+}
+}
