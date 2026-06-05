@@ -30,3 +30,23 @@
     cursor: pointer; 
     transition: 0.3s; 
 }
+
+.busca-section-festas {
+     margin: 30px 0 15px 0; 
+}
+
+.input-busca-festas { 
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px; 
+    border: 1px solid #8e44ad; 
+    border-radius: 6px; 
+    margin-top: 10px; 
+    outline: none;
+}
+
+.lista-horizontal-festas { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+}
