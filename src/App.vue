@@ -14,3 +14,11 @@
       <PaginaFestas v-else-if="paginaAtual === 'festas'" @abrir-modal="prepararFluxoCompra" />
       <PaginaFestivais v-else-if="paginaAtual === 'festivais'" @abrir-modal="prepararFluxoCompra" />
     </main>
+
+    <ModalCompra 
+      v-if="modalAberto" 
+      :evento-selecionado="eventoAtual" 
+      @fechar="modalAberto = false"
+    />
+  </div>
+</template>
