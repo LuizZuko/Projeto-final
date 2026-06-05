@@ -13,3 +13,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+defineProps({
+  evento: { type: Object, required: true }
+});
+defineEmits(['abrir-modal']);
+</script>
