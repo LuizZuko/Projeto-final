@@ -115,3 +115,13 @@
     font-weight: bold; 
     width: 100%; 
 }
+
+.btn-confirmar { 
+    background: #27ae60; 
+    color: white; 
+}
+
+.btn-cancelar { 
+    background: #e74c3c; 
+    color: white; 
+}
