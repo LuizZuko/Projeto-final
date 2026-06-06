@@ -11,7 +11,7 @@ const shows = ref([
     nome: 'Os Barões da Pisadinha', 
     data: '15/10/2026', 
     preco: 120.00, 
-    imagem:  
+    imagem: 'Baroes.jfif'
 },
 
   { 
@@ -19,7 +19,7 @@ const shows = ref([
     nome: 'João Gomes', 
     data: '22/10/2026', 
     preco: 150.00, 
-    imagem:  
+    imagem: 'João.jfif'
 },
 
   { 
@@ -27,15 +27,15 @@ const shows = ref([
     nome: 'Tarcísio do Acordeon', 
     data: '05/11/2026', 
     preco: 90.00, 
-    imagem:  
+    imagem: 'Tarcisio.jfif' 
 },
 
   { 
     id: 4, 
-    nome: 'Nattan', 
+    nome: 'Filho do piseiro', 
     data: '12/11/2026', 
     preco: 180.00, 
-    imagem:  
+    imagem: 'Filho.jfif'
 }
 
 ]);
