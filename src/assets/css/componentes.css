@@ -125,3 +125,13 @@
     background: #e74c3c; 
     color: white; 
 }
+
+@media (min-width: 481px) and (max-width: 992px) {
+  .card-img { 
+    height: 180px; 
+}
+  .modal-content { 
+    max-width: 380px; 
+    padding: 25px; 
+}
+}
