@@ -44,3 +44,27 @@ const eventosFiltrados = computed(() => {
   return shows.value.filter(evento => evento.nome.toLowerCase().includes(termoBusca.value.toLowerCase()));
 });
 </script>
+
+<template>
+  <div class="shows-page">
+    <section class="busca-section-shows">
+      <h2>Shows Nordestinos</h2>
+      <p>O melhor do Forró, Piseiro e Arrocha!</p>
+      <input type="text" v-model="termoBusca" placeholder="Busque por artista..." class="input-busca-shows" />
+    </section>
+
+    <section class="grid-eventos-shows">
+      <p v-if="eventosFiltrados.length === 0" class="sem-resultado-shows">Nenhum show encontrado.</p>
+      
+      <CardEvento 
+        v-for="evento in eventosFiltrados" 
+        :key="evento.id" 
+        :evento="evento"
+        @abrir-modal="(e) => $emit('abrir-modal', e)"
+      />
+    </section>
+  </div>
+</template>
+
+
+<style src="../assets/css/shows.css" scoped></style>
