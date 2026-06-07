@@ -39,8 +39,8 @@ const termoBusca = ref('');
 const festaDestaque = { id: 6, nome: 'Rave Eletrônica Sunset', data: '08/01/2027', preco: 250.00 };
 
 const festas = ref([
-  { id: 5, nome: 'Festa do Branco', data: '20/12/2026', preco: 80.00, imagem: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=400' },
-  { id: 7, nome: 'Baile de Máscaras', data: '15/02/2027', preco: 100.00, imagem: 'https://images.unsplash.com/photo-1533174000287-4015c19cb074?auto=format&fit=crop&q=80&w=400' }
+  { id: 5, nome: 'Festa do Branco', data: '20/12/2026', preco: 150.00, imagem: 'https://wl-incrivel.cf.tsp.li/resize/728x/png/712/b21/b784ae59ab82bb31652952c123.png' },
+  { id: 7, nome: 'Baile de Máscaras', data: '15/02/2027', preco: 100.00, imagem: 'https://alfred.alboompro.com/resize/width/1280/type/jpeg/url/storage.alboom.ninja/sites/66678/media/3_aeb97bc9c837.png?t=1610297524' }
 ]);
 
 const eventosFiltrados = computed(() => {
