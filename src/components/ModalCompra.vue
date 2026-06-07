@@ -10,3 +10,8 @@
           <label for="nome">Nome Completo:</label>
           <input type="text" id="nome" v-model="nomeComprador" required placeholder="Digite seu nome" />
         </div>
+
+        <div class="form-group">
+          <label for="quantidade">Quantidade (Máx 5):</label>
+          <input type="number" id="quantidade" v-model.number="quantidade" min="1" max="5" required />
+        </div>
