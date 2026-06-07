@@ -10,8 +10,46 @@
           <label for="nome">Nome Completo:</label>
           <input type="text" id="nome" v-model="nomeComprador" required placeholder="Digite seu nome" />
         </div>
-
+        
         <div class="form-group">
           <label for="quantidade">Quantidade (Máx 5):</label>
           <input type="number" id="quantidade" v-model.number="quantidade" min="1" max="5" required />
         </div>
+
+        <p class="total">Total: R$ {{ totalCompra.toFixed(2) }}</p>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-cancelar" @click="$emit('fechar')">Cancelar</button>
+          <button type="submit" class="btn-confirmar">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, computed } from 'vue';
+
+const props = defineProps({
+  eventoSelecionado: { type: Object, required: true }
+});
+const emit = defineEmits(['fechar']);
+
+const nomeComprador = ref('');
+const quantidade = ref(1);
+
+const totalCompra = computed(() => {
+  return quantidade.value * props.eventoSelecionado.preco;
+});
+
+const finalizarCompra = () => {
+  if (nomeComprador.value.trim().length < 3) {
+    alert("Insira um nome válido.");
+    return;
+  }
+  alert(`Reserva Concluída!\n\nCliente: ${nomeComprador.value}\nEvento: ${props.eventoSelecionado.nome}\nTotal: R$ ${totalCompra.value.toFixed(2)}`);
+  emit('fechar');
+};
+</script>
+
+<style src="../assets/css/componentes.css" scoped></style>
