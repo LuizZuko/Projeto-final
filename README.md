@@ -1,38 +1,26 @@
-# Projeto final
+#  Pisada Prime - Plataforma de Eventos
 
-This template should help get you started developing with Vue 3 in Vite.
+Um sistema SPA (Single Page Application) moderno desenvolvido em **Vue.js** para gerenciamento e venda de ingressos de Shows, Festas e Festivais. O projeto conta com design 100% responsivo (Desktop, Tablet e Smartphone), componentes dinâmicos e isolamento de estilos.
+---
 
-## Recommended IDE Setup
+## Como Iniciar o Projeto pelo Terminal (CMD)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Siga o passo a passo abaixo para rodar o projeto localmente na sua máquina:
 
-## Recommended Browser Setup
+### 1. Acesse a pasta do projeto
+Abra o seu terminal (CMD) e navegue até a pasta onde os arquivos do projeto estão localizados:
+```bash
+cd caminho/para/a/pasta/do/projeto
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+2. Instale as dependências
+Na primeira vez que for rodar o projeto, é necessário baixar os pacotes do Vue. Execute o comando:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+Bash
 npm install
-```
 
-### Compile and Hot-Reload for Development
+3. Ligue o servidor local
+Após a instalação ser concluída, inicie o servidor de desenvolvimento.
 
-```sh
+(padrão atual do ecossistema Vue):
+
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
